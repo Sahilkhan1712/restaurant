@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background:  rgb(248,232,217);
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: red;
+    font: bold;
+    
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.table {
+    background: #4CAF50; /* green = available */
+    color: white;
+    padding: 40px 0;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.table:hover {
+    opacity: 0.8;
+}
+
+.table.booked {
+    background: #d32f2f; /* red = booked */
+    cursor: not-allowed;
+}

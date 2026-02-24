@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Table Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+
+    <h1> Al Hayat Restaurant Table Booking</h1>
+
+    <div class="table-container">
+        <div class="table" onclick="bookTable(this)">Table 1</div>
+        <div class="table" onclick="bookTable(this)">Table 2</div>
+        <div class="table" onclick="bookTable(this)">Table 3</div>
+        <div class="table" onclick="bookTable(this)">Table 4</div>
+        <div class="table" onclick="bookTable(this)">Table 5</div>
+        <div class="table" onclick="bookTable(this)">Table 7</div>
+        <div class="table" onclick="bookTable(this)">Table 8</div>
+        <div class="table" onclick="bookTable(this)">Table 9</div>
+        <div class="table" onclick="bookTable(this)">Table 10</div>
+        <div class="table" onclick="bookTable(this)">Table 11</div>
+        <div class="table" onclick="bookTable(this)">Table 12</div>
+        <div class="table" onclick="bookTable(this)">Table 13</div>
+        <div class="table" onclick="bookTable(this)">Table 14</div>
+        <div class="table" onclick="bookTable(this)">Table 15</div>
+        <div class="table" onclick="bookTable(this)">Table 16</div>
+    </div>
+
+<script>
+    function bookTable(table) {
+        if (!table.classList.contains("booked")) {
+            table.classList.add("booked");
+            table.textContent = "Booked";
+        }
+    }
+</script>
+
+</body>
+</html>
