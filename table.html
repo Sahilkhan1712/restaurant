@@ -28,14 +28,20 @@
         <div class="table" onclick="bookTable(this)">Table 15</div>
         <div class="table" onclick="bookTable(this)">Table 16</div>
     </div>
-
 <script>
-    function bookTable(table) {
-        if (!table.classList.contains("booked")) {
+function bookTable(table) {
+    if (!table.classList.contains("booked")) {
+
+        let name = prompt("Enter your name");
+
+        if (name && name.trim() !== "") {
             table.classList.add("booked");
-            table.textContent = "Booked";
+            table.textContent = "Booked by " + name;
+        } else {
+            alert("Name is required to book");
         }
     }
+}
 </script>
 
 </body>
